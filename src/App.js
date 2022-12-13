@@ -39,12 +39,12 @@ export default function App() {
         />
         <button type="submit">Add</button>
         <ul>
-          {cities.map((ele) => (
-            <li style={{ margin: "auto" }}>
-              <span key={ele.id}>{ele.name}</span>
+          {cities.map((el) => (
+            <li >
+              <span key={el.id}>{el.name}</span>
               <button
                 style={{ marginLeft: "10px" }}
-                onClick={() => RemoveItems(ele.id)}
+                onClick={() => RemoveItems(el.id)}
               >
                 x
               </button>
